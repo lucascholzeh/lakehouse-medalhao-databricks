@@ -1,0 +1,16 @@
+cd_estado,nm_estado,uf,cd_regiao
+1,Rio Grande do Sul,RS,1
+2,Santa Catarina,SC,1
+3,Parana,PR,1
+4,Sao Paulo,SP,2
+5,Rio de Janeiro,RJ,2
+6,Minas Gerais,MG,2
+7,Espirito Santo,ES,2
+8,Mato Grosso,MT,3
+9,Mato Grosso do Sul,MS,3
+10,Goias,GO,3
+11,Bahia,BA,4
+12,Pernambuco,PE,4
+13,Ceara,CE,4
+14,Para,PA,5
+15,Amazonas,AM,5
