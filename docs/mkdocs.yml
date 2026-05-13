@@ -1,0 +1,82 @@
+site_name: Lakehouse Databricks — Arquitetura Medalhão
+site_description: Documentação do projeto de Engenharia de Dados com Databricks, Delta Lake e Star Schema
+site_author: Engenharia de Software
+repo_url: https://github.com/seu-usuario/lakehouse-databricks-medaliao
+repo_name: lakehouse-databricks-medaliao
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 🏠 Início: index.md
+  - 🏗️ Arquitetura:
+      - Visão Geral: arquitetura/visao-geral.md
+      - Modelo de Dados: arquitetura/modelo-dados.md
+      - Camadas Medalhão: arquitetura/camadas.md
+  - 📓 Notebooks:
+      - 001 - Preparando Ambiente: notebooks/001-ambiente.md
+      - 002 - Camada Bronze: notebooks/002-bronze.md
+      - 003 - Camada Silver: notebooks/003-silver.md
+      - 004 - Camada Gold: notebooks/004-gold.md
+  - 📋 Guias:
+      - Como usar o Databricks: guias/databricks-guia.md
+      - Upload de Arquivos: guias/upload-arquivos.md
+      - Criando o JOB: guias/criando-job.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/seu-usuario
