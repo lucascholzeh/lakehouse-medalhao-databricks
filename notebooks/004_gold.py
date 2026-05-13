@@ -272,7 +272,7 @@ df_regiao.createOrReplaceTempView("regiao")
 # MAGIC WITH localidade_relacional AS (
 # MAGIC   SELECT m.CODIGO_MUNICIPIO,
 # MAGIC          m.NOME_MUNICIPIO,
-# MAGIC          e.SIGLA_ESTADO,
+# MAGIC          e.UF AS SIGLA_ESTADO,
 # MAGIC          e.NOME_ESTADO,
 # MAGIC          r.NOME_REGIAO
 # MAGIC     FROM municipio m
